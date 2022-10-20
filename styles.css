@@ -321,6 +321,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+    max-width: calc(100% / 2);
 }
 
 .quality,
@@ -388,4 +389,118 @@ input::placeholder {
     display: flex;
     width: 60%;
     margin-bottom: 5rem;
+}
+
+.class__text {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+
+/* QUALITY */
+
+.whatever {
+    display: flex;
+    width: 100%;
+}
+
+.quality__text{
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.quality__extra {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.affordable {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img__affordable--span {
+    display: flex;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border: 0.1rem solid #d3d3d3;
+    border-radius: 9999px;
+    border-width: 0.01px;
+    text-align: center;
+}
+
+.image__values {
+    width: 100%;
+}
+
+.quality__text--para {
+    display: flex;
+    width: 100%;
+    max-width: 100%; 
+}
+
+
+/* PRICING */
+
+.row__service {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.prices__container--wrapper {
+    display: flex;
+    height: 60vh;
+}
+
+
+.prices__container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: calc( 100% / 3);
+    text-align: center;
+    margin-right: 3rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 2rem;
+} 
+
+.prices__line{
+    border: 1px solid #d3d3d3;
+    width: 100%;
+}
+
+.prices__container--2 {
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.prices__heading--text {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.prices__monthly {
+    color: white;
+}
+
+
+.prices__features h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.prices__features h4 {
+    color: white;
+    margin-bottom: 1rem;
 }
