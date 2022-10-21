@@ -453,11 +453,16 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 14rem;
+    margin-bottom: 7rem;
 }
 
 .prices__container--wrapper {
     display: flex;
-    height: 60vh;
+    width: 100%;
+    height: 650px;
 }
 
 
@@ -465,42 +470,230 @@ input::placeholder {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     width: 100%;
     max-width: calc( 100% / 3);
     text-align: center;
     margin-right: 3rem;
     border: 1px solid #d3d3d3;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 2rem;
+} 
+
+.prices__container:last-child {
+    margin-right: 0;
+
 } 
 
 .prices__line{
     border: 1px solid #d3d3d3;
+    display: flex;
     width: 100%;
 }
 
-.prices__container--2 {
-    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+.prices__container--1, .prices__container--3 {
+    color: #959494;
 }
 
-.prices__heading--text {
-    color: white;
+.prices__container--1, .prices__container--2 ,.prices__container--3 {
+    transition: all 100ms ease-in-out;
+}
+
+.prices__container--1 {
+    border: 1px solid #41be7e;
+}
+
+.prices__container--1:hover {
+ box-shadow: 0px 0px 4px 0px #41be7e;
+}
+
+.prices__container--2 {
+    border: 1px solid #4c51bf;
+}
+
+.prices__container--2:hover {
+    box-shadow: 0px 0px 4px 0px #4c51bf;
+}
+
+.prices__container--3 {
+    border: 1px solid #be4160;
+}
+
+.prices__container--3:hover {
+box-shadow: 0px 0px 4px 0px #be4160;
+}
+
+
+
+.prices__heading--1, .prices__heading--2, .prices__heading--3 {
+    color: #595959;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.1 rem;
+}
+
+.prices__heading--1 {
+    color:#41be7e
+}
+.prices__heading--2 {
+    color:#4c51bf
+}
+.prices__heading--3 {
+    color:#be4160
+}
+
+.prices__heading--text, .prices__heading--text1, .prices__heading--text2 {
+    color: #595959;
     margin-bottom: 1.5rem;
 }
 
 .prices__monthly {
-    color: white;
+    color: #959494;
 }
 
-
 .prices__features h3 {
-    color: white;
+    color: #484848;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
 .prices__features h4 {
-    color: white;
+    color: #545454;
     margin-bottom: 1rem;
+}
+
+.prices__features--2 h3 {
+    color: #484848;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.prices__features--2 h4 {
+    color: #545454;
+    margin-bottom: 1rem;
+}
+
+.buy__now {
+    padding: 1rem 3rem;
+    border-radius: 32px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    transition: all 100ms ease-in-out;
+    margin-top: 10px;
+    color: white;
+    
+}
+.buy__now--1 {
+    background-color: #41be7e;
+}
+
+.buy__now--2 {
+    background-color: #4c51bf;
+}
+
+.buy__now--3 {
+    background-color: #be4160;
+}
+
+
+.buy__now--1:hover, .buy__now--2:hover, .buy__now--3:hover{
+    /* background-color: rgb(76, 81, 191); */
+    /* color: white; */
+    padding: 1.5rem 3.5rem;
+    cursor: not-allowed;  
+}
+
+.prices__container--1  hr{
+    border: 1px solid #41be7e;
+}
+
+.prices__container--3  hr{
+    border: 1px solid #be4160;
+}
+
+.prices__container--2  hr{
+    border: 1px solid #4c51bf;
+}
+
+
+/* COMMERCIAL TIME */
+
+
+#commercial .row {
+    background-color: #4c51bf;
+    max-width: 100%;
+    width: 1300px;
+}
+
+.commercial__time--wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+    margin: 10rem 0rem;
+}
+
+.h3__text {
+color: white;
+font-size: 2rem;
+max-width: 40%;
+}
+
+.commercial__buttons {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ct__button--1, .ct__button--2 {
+    max-width: 50%
+}
+
+.ct__button--1, .ct__button--2 {
+    width: 10rem;
+    line-height: 1;
+    border: none;
+    border-radius: 32px;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1.5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    white-space: nowrap;
+    margin-right: 2rem;
+    transition: all 100ms ease-in-out;
+}
+
+.ct__button--1 {
+    background-color: #be4160;
+    color: white;
+}
+
+.ct__button--1:hover {
+    background-color: white;
+    color: #be4160;
+}
+
+
+.ct__button--2 {
+    background-color:white;
+    color: #595959
+}
+
+.ct__button--2:hover {
+    background-color: #595959;
+    color: #fff;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    max-width: 100vw;
+    background-color: white;
 }
